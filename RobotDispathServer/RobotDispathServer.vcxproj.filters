@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{bc0894dc-5ca0-43f1-b479-ea645fef645d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{46b22336-4c58-4c2d-8191-087e301f0a87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RobotDispathServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_main_app.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_message_handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_client_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_module_wrap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_module_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_module_thread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_message_dispatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_mcs_monitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FSocket.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="robot_main_app.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_message_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="typeenum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_client_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_module_wrap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_module_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_module_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_message_dispatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_mcs_monitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FSocket.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

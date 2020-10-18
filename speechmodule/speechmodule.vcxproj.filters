@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="robot_voice_com.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_release.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_json_rsp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_struct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_process.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_isr_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_tts_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_isr_ify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_media.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_media_publish.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\robot_PostMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RobotModule_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_isr_ifly_ccb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_isr_ifly_ccb95533.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_internetcheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_sound_buffer_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_tts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_global_singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_tts_ifly_ability.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_voice_tts_baidu_ability.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="speechmodule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_com.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_release.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_process.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_isr_interface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_tts_interface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_isr_ify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_media.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_media_publish.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\robot_PostMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_isr_ifly_ccb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_isr_ifly_ccb95533.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_internetcheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_tts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_global_singleton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_tts_ifly_ability.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_voice_tts_baidu_ability.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EF24930-0717-419B-9865-CFFEAEC2BD66}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>facemodule</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FACEMODULE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\include;C:\myrobot\service-ccb\robot_mainservice\include\opencv\include;.\yuncong;.\arcsoft\inc;.\readface\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Debug;..\lib\opencv\x86\lib;.\lib\;..\lib\json\debug;.\arcsoft\lib\Win32;.\readface\lib;..\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xCommon.lib;memorySwaper.lib;opencv_core2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_video2410d.lib;opencv_videostab2410d.lib;seetafacedll.lib;libfacedetect.lib;jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FACEMODULE_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\include;C:\myrobot\service\robot_mainservice\include\opencv\include;.\yuncong;.\arcsoft\inc;.\readface\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib\release;..\lib\json\release;C:\myrobot\service-ccb\robot_mainservice\lib\opencv\x86\lib;.\lib;.\arcsoft\lib\Win32;.\readface\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xCommon.lib;memorySwaper.lib;opencv_core2410.lib;opencv_highgui2410.lib;opencv_imgproc2410.lib;opencv_video2410.lib;opencv_videostab2410.lib;seetafacedll.lib;libfacedetect.lib;jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RobotModule_interface.h" />
+    <ClInclude Include="..\include\robot_PostMessage.h" />
+    <ClInclude Include="robot_FaceDebug_Windows.h" />
+    <ClInclude Include="robot_face_detect_arcsoft.h" />
+    <ClInclude Include="robot_face_detect_data.h" />
+    <ClInclude Include="robot_face_detect_readface.h" />
+    <ClInclude Include="robot_face_features.h" />
+    <ClInclude Include="robot_face_features_seetaface.h" />
+    <ClInclude Include="robot_face_features_yuncong.h" />
+    <ClInclude Include="robot_face_features_arcsoft.h" />
+    <ClInclude Include="robot_face_feature_interface.h" />
+    <ClInclude Include="robot_face_features_readface.h" />
+    <ClInclude Include="robot_face_live_detect_yuncong.h" />
+    <ClInclude Include="robot_face_live_handle_yuncong.h" />
+    <ClInclude Include="robot_face_live_interface.h" />
+    <ClInclude Include="robot_face_msghandler.h" />
+    <ClInclude Include="robot_face_process_interface.h" />
+    <ClInclude Include="robot_face_readface_singleton.h" />
+    <ClInclude Include="robot_face_template.h" />
+    <ClInclude Include="robot_json_rsp.h" />
+    <ClInclude Include="robot_face_detect_interface.h" />
+    <ClInclude Include="robot_face_detect_libfacedetect.h" />
+    <ClInclude Include="robot_face_detect_seetaface.h" />
+    <ClInclude Include="robot_face_detect_yuncong.h" />
+    <ClInclude Include="robot_face_manager.h" />
+    <ClInclude Include="robot_face_process.h" />
+    <ClInclude Include="robot_face_struct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\robot_PostMessage.cpp" />
+    <ClCompile Include="face_module_main.cpp" />
+    <ClCompile Include="robot_FaceDebug_Windows.cpp" />
+    <ClCompile Include="robot_face_detect_arcsoft.cpp" />
+    <ClCompile Include="robot_face_detect_data.cpp" />
+    <ClCompile Include="robot_face_detect_readface.cpp" />
+    <ClCompile Include="robot_face_features.cpp" />
+    <ClCompile Include="robot_face_features_seetaface.cpp" />
+    <ClCompile Include="robot_face_features_yuncong.cpp" />
+    <ClCompile Include="robot_face_features_arcsoft.cpp" />
+    <ClCompile Include="robot_face_features_readface.cpp" />
+    <ClCompile Include="robot_face_live_detect_yuncong.cpp" />
+    <ClCompile Include="robot_face_live_handle_yuncong.cpp" />
+    <ClCompile Include="robot_face_msghandler.cpp" />
+    <ClCompile Include="robot_face_readface_singleton.cpp" />
+    <ClCompile Include="robot_face_template.cpp" />
+    <ClCompile Include="robot_face_detect_libfacedetect.cpp" />
+    <ClCompile Include="robot_face_detect_seetaface.cpp" />
+    <ClCompile Include="robot_face_detect_yuncong.cpp" />
+    <ClCompile Include="robot_face_manager.cpp" />
+    <ClCompile Include="robot_face_process.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
